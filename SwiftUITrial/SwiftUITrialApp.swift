@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUITrialApp: App {
+    let content = Binding<String>.constant("")
     var body: some Scene {
         WindowGroup {
-            DamagochiView()
+            
+            return LoginView(content: content)
         }
     }
 }

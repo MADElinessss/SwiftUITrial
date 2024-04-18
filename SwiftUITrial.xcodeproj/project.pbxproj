@@ -14,6 +14,7 @@
 		C1754BAB2BCD898000728142 /* ServiceAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1754BAA2BCD898000728142 /* ServiceAgreementView.swift */; };
 		C1754BAD2BCD93FB00728142 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C1754BAC2BCD93FB00728142 /* .gitignore */; };
 		C1754BE92BD00D9C00728142 /* DamagochiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1754BE82BD00D9C00728142 /* DamagochiView.swift */; };
+		C1754BFD2BD1715100728142 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1754BFC2BD1715100728142 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C1754BAA2BCD898000728142 /* ServiceAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAgreementView.swift; sourceTree = "<group>"; };
 		C1754BAC2BCD93FB00728142 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C1754BE82BD00D9C00728142 /* DamagochiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamagochiView.swift; sourceTree = "<group>"; };
+		C1754BFC2BD1715100728142 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				C1754B9E2BCD88C800728142 /* ContentView.swift */,
 				C1754BAA2BCD898000728142 /* ServiceAgreementView.swift */,
 				C1754BE82BD00D9C00728142 /* DamagochiView.swift */,
+				C1754BFC2BD1715100728142 /* LoginView.swift */,
 				C1754BA02BCD88CA00728142 /* Assets.xcassets */,
 				C1754BA22BCD88CA00728142 /* Preview Content */,
 				C1754BAC2BCD93FB00728142 /* .gitignore */,
@@ -150,6 +153,7 @@
 				C1754BAB2BCD898000728142 /* ServiceAgreementView.swift in Sources */,
 				C1754B9F2BCD88C800728142 /* ContentView.swift in Sources */,
 				C1754BE92BD00D9C00728142 /* DamagochiView.swift in Sources */,
+				C1754BFD2BD1715100728142 /* LoginView.swift in Sources */,
 				C1754B9D2BCD88C800728142 /* SwiftUITrialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
