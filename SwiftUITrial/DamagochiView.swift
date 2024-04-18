@@ -19,6 +19,10 @@ struct DamagochiView: View {
         VStack {
             Button("방실방실 다마고치") {
                 // 다마고치 버튼
+                rice = 0
+                water = 0
+                inputRice = ""
+                inputWater = ""
             }
             .frame(width: 150, height: 44)
             .foregroundColor(.black)
@@ -33,13 +37,21 @@ struct DamagochiView: View {
                 .font(.system(size: 16, weight: .semibold))
                 .padding(.bottom, 36)
             
+            
+            Damagochi(level: $level)
+            
             HStack {
                 TextField("밥주세용", text: $inputRice)
                     .keyboardType(.numberPad)
+                    .frame(width: 100, height: 44)
                 Button("🍚 밥 먹기") {
                     if let newRice = Int(inputRice) {
                         rice += newRice
-                        inputRice = ""  // 입력 필드 초기화
+                        inputRice = ""
+                        if rice >= 50 {
+                            level += 1
+                            rice = rice % 50
+                        }
                     }
                 }
             }
@@ -47,6 +59,7 @@ struct DamagochiView: View {
             HStack {
                 TextField("물주세용", text: $inputWater)
                     .keyboardType(.numberPad)
+                    .frame(width: 100, height: 44)
                 Button("💧 물 먹기") {
                     if let newWater = Int(inputWater) {
                         water += newWater
@@ -60,4 +73,22 @@ struct DamagochiView: View {
 
 #Preview {
     DamagochiView()
+}
+
+struct Damagochi: View {
+    @Binding var level: Int
+    var body: some View {
+        ZStack {
+            if level >= 3 {
+                Text("🐥")
+                    .font(.system(size: 200))
+            } else if level >= 2 {
+                Text("🐣")
+                    .font(.system(size: 200))
+            } else {
+                Text("🥚")
+                    .font(.system(size: 200))
+            }
+        }
+    }
 }

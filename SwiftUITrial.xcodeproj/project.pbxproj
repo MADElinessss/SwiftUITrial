@@ -60,10 +60,10 @@
 				C1754B9C2BCD88C800728142 /* SwiftUITrialApp.swift */,
 				C1754B9E2BCD88C800728142 /* ContentView.swift */,
 				C1754BAA2BCD898000728142 /* ServiceAgreementView.swift */,
+				C1754BE82BD00D9C00728142 /* DamagochiView.swift */,
 				C1754BA02BCD88CA00728142 /* Assets.xcassets */,
 				C1754BA22BCD88CA00728142 /* Preview Content */,
 				C1754BAC2BCD93FB00728142 /* .gitignore */,
-				C1754BE82BD00D9C00728142 /* DamagochiView.swift */,
 			);
 			path = SwiftUITrial;
 			sourceTree = "<group>";
