@@ -12,7 +12,6 @@ struct SwiftUITrialApp: App {
     let content = Binding<String>.constant("")
     var body: some Scene {
         WindowGroup {
-            
             return LoginView(content: content)
         }
     }
