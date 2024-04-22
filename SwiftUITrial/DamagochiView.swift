@@ -14,25 +14,33 @@ struct DamagochiView: View {
     @State var water: Int = 0
     @State var inputRice: String = ""
     @State var inputWater: String = ""
+    @State var tag:Int? = nil
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
             VStack {
-                Button("방실방실 다마고치") {
-                    // 다마고치 버튼
-                    rice = 0
-                    water = 0
-                    inputRice = ""
-                    inputWater = ""
+                ZStack {
+                    NavigationLink(destination: CategoryView(), tag: 1, selection: self.$tag ) {
+                        EmptyView()
+                    }
+                    
+                    Button("방실방실 다마고치") {
+                        // 다마고치 버튼
+                        self.tag = 1
+                        rice = 0
+                        water = 0
+                        inputRice = ""
+                        inputWater = ""
+                    }
+                    .frame(width: 150, height: 44)
+                    .foregroundColor(.black)
+                    .clipShape(RoundedRectangle(cornerRadius: 22))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 22)
+                            .stroke(Color.black, lineWidth: 1)
+                    )
                 }
-                .frame(width: 150, height: 44)
-                .foregroundColor(.black)
-                .clipShape(RoundedRectangle(cornerRadius: 22))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 22)
-                        .stroke(Color.black, lineWidth: 1)
-                )
                 .padding(.bottom, 16)
                 
                 Text("LV\(level) • 밥알 \(rice)개 • 물방울 \(water)개")

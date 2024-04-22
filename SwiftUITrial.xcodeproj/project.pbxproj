@@ -17,6 +17,7 @@
 		C1754BFD2BD1715100728142 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1754BFC2BD1715100728142 /* LoginView.swift */; };
 		C1754C562BD6256800728142 /* NavigationBarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1754C552BD6256800728142 /* NavigationBarWrapper.swift */; };
 		C1754C582BD629C000728142 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1754C572BD629C000728142 /* AlbumView.swift */; };
+		C1754C5A2BD62CD400728142 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1754C592BD62CD400728142 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C1754BFC2BD1715100728142 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C1754C552BD6256800728142 /* NavigationBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWrapper.swift; sourceTree = "<group>"; };
 		C1754C572BD629C000728142 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		C1754C592BD62CD400728142 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				C1754BAA2BCD898000728142 /* ServiceAgreementView.swift */,
 				C1754BE82BD00D9C00728142 /* DamagochiView.swift */,
 				C1754BFC2BD1715100728142 /* LoginView.swift */,
+				C1754C592BD62CD400728142 /* CategoryView.swift */,
 				C1754C572BD629C000728142 /* AlbumView.swift */,
 				C1754BA02BCD88CA00728142 /* Assets.xcassets */,
 				C1754BA22BCD88CA00728142 /* Preview Content */,
@@ -170,6 +173,7 @@
 				C1754C582BD629C000728142 /* AlbumView.swift in Sources */,
 				C1754C562BD6256800728142 /* NavigationBarWrapper.swift in Sources */,
 				C1754BFD2BD1715100728142 /* LoginView.swift in Sources */,
+				C1754C5A2BD62CD400728142 /* CategoryView.swift in Sources */,
 				C1754B9D2BCD88C800728142 /* SwiftUITrialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
