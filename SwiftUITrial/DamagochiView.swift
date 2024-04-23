@@ -15,6 +15,7 @@ struct DamagochiView: View {
     @State var inputRice: String = ""
     @State var inputWater: String = ""
     @State var tag:Int? = nil
+    @State private var showSheet: Bool = false
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -49,6 +50,9 @@ struct DamagochiView: View {
                 
                 
                 Damagochi(level: $level)
+                    .onTapGesture {
+                        self.showSheet.toggle()
+                    }
                 
                 HStack {
                     TextField("밥주세용", text: $inputRice)
@@ -78,6 +82,11 @@ struct DamagochiView: View {
                     }
                 }
             }
+            .sheet(isPresented: $showSheet, content: {
+                CharacterView()
+                    .presentationDetents([.height(200)])
+                    .presentationDragIndicator(.visible)
+            })
             .navigationBar {
                 Button {
                     // action
